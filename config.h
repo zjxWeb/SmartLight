@@ -1,14 +1,14 @@
 #pragma once
 
 // ===== WiFi =====
-#define WIFI_SSID     "CMCC-5Xkw"
-#define WIFI_PASS     "ghmffu66"
+#define WIFI_SSID     "wifi名称"
+#define WIFI_PASS     "wifi密码"
 
 // ===== 巴法云 MQTT =====
 // 连接方式：ClientID = 用户私钥，用户名密码留空
 #define BEMFA_HOST    "bemfa.com"
 #define BEMFA_PORT    9501
-#define BEMFA_UID     "8fd2b55182b34226b77ac2d7ed5fdb25"  // 控制台右上角获取
+#define BEMFA_UID     "密钥"  // 控制台右上角获取
 
 // 主题名（后三位决定设备类型）
 // 002 = 灯泡设备，消息格式: on#亮度(0-100)#RGB十进制 / off
@@ -18,7 +18,7 @@
 #define TOPIC_MODE    "mymode006"
 
 // ===== 天气API (心知天气免费版) =====
-#define WEATHER_KEY      "SNE-Se1A25vPrj1XP"
+#define WEATHER_KEY      "密钥"
 #define WEATHER_CITY     "qingyang"
 #define WEATHER_NOW_URL  "http://api.seniverse.com/v3/weather/now.json?key=" WEATHER_KEY "&location=" WEATHER_CITY "&language=zh-Hans&unit=c"
 #define WEATHER_3D_URL   "http://api.seniverse.com/v3/weather/daily.json?key=" WEATHER_KEY "&location=" WEATHER_CITY "&language=zh-Hans&unit=c&start=0&days=3"
